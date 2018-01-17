@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Perancangan Layout</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="validasi.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<img id="logo" src="image\html.png">
+				<span id="title"><b>Fun</b>koding</span>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#course">Course</a></li>
+					<li><a href="#register">Register</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+				<img id="header-image" src="image/banner2.png" style="width: 100%;">
+		</header>
+
+		<div class="container">
+			<section id="course">
+				<article>
+					<h1>Choose Your Course</h1>
+					<div class="course-box">
+						<a href="#"><div class="image1"></div></a>
+						<h3 class="course-text-1">HTML</h3>
+						<p class="course-text">
+							With HTML you can create your own Web site.
+							This tutorial teaches you everything about HTML.
+							HTML is easy to learn - You will enjoy it.
+						</p>
+						</p>
+					</div>
+					<div class="course-box">
+						<a href="#"><div class="image2"></div></a>
+						<h3 class="course-text-2">CSS</h3>
+						<p class="course-text">
+							CSS is a language that describes the style of an HTML document.
+							CSS describes how HTML elements should be displayed.
+							This tutorial will teach you CSS from basic to advanced.
+						</p>
+					</div>
+					<div class="course-box">
+						<a href="" ref="#"><div class="image3"></div></a>
+						<h3 class="course-text-3">Javascript</h3>
+						<p class="course-text">
+							JavaScript is the programming language of HTML and the Web.
+							JavaScript is easy to learn.
+							This tutorial will teach you JavaScript from basic to advanced.
+						</p>
+					</div>
+				</article>
+			</section>
+		</div>
+			<section id="register">
+				<div class="container">
+					<hr>
+					<h1>Join Us Today</h1>
+						<form action="#" method="get" name="formregis" onsubmit="return validateForm()">
+							<table align="center" class="form-table" cellpadding="5px">
+								<tr>
+									<td><label>Nama</label></td>
+									<td> : </td>
+									<td><input type="text" id="nama" name="nama" placeholder="Isikan nama anda" size="30" class="input">
+										<div id="validasinama">Nama harus diisi</div>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><label>NIM</label></td>
+									<td> : </td>
+									<td><input type="text" id="nim" name="nim" placeholder="Isikan NIM anda" size="30" class="input">
+									<div id="validasinim">NIM harus diisi</div>
+									</td>
+								</tr>
+								<tr>
+									<td><label>Jenis Kelamin</label></td>
+									<td> : </td>
+									<td><input type="radio" id="jk1" name="jk" value="L"><span class="input-value">Laki-laki</span>
+										<input type="radio" id="jk2" name="jk" value="P"><span class="input-value">Perempuan
+										<div id="validasijk">Pilihlah salah satu</div></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Kota Asal</td>
+									<td> : </td>
+									<td>
+										<select id="kota" name="kota">
+											<option value="" checked>-Pilih Kota Anda-</option>
+											<option value="pontinak">Pontianak</option>
+											<option value="singkawang">Singkawang</option>
+											<option value="sambas">Sambas</option>
+											<option value="putusibau">Putusibau</option>
+											<option value="sintang">Sintang</option>
+										</select>
+										<div id="validasikota">Pilihlah salah satu</div>
+									</td>
+								</tr>
+								<tr>
+									<td>Tanggal Lahir</td>
+									<td> : </td>
+									<td><input type="date" name="tanggal" id="tanggal">
+										<div id="validasitanggal">Isikan tanggal lahir anda</div>
+									</td>
+								</tr>
+								<tr>
+									<td>Alamat</td>
+									<td> : </td>
+									<td><textarea style="padding: 5px;" name="alamat" placeholder="Isikan Alamat Anda"></textarea>
+										<div id="validasialamat">Isikan alamat anda</div>
+									</td>
+								</tr>
+								<tr>
+									<td>Tujuan Mendaftar</td>
+									<td> : </td>
+									<td>
+										<input type="checkbox" value="siswa" name="hobi1"><span class="input-value">Sekedar hobi</span><br>
+										<input type="checkbox" value="siswa" name="hobi2"><span class="input-value">Penuh-penuhin akun</span><br>
+										<input type="checkbox" value="siswa" name="hobi3"><span class="input-value">Untuk menjelajah web</span><br>
+										<input type="checkbox" value="siswa" name="hobi4"><span class="input-value">Agar bisa mengomentari post</span><br>
+										<div id="validasitujuan">Pilihlah salah satu</div>
+									</td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td> </td>
+									<td><button type="submit" value="simpan">Simpan</button>
+									<button type="reset">Reset</button></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+			</section>
+		</div>
+		<footer>
+			Copyright &copy; Albert Stevan Yondra - H1051161047
+		</footer>
+	</body>
+</html>
